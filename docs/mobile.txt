@@ -1,0 +1,21 @@
+Tipos de Aplicativos Mobile (Apps)
+- WebDAV / Web App
+- Nativos: Um código para cada plataforma
+- Hibridos: O mesmo código gera aplicativos para Android (Fucsia) e IOS
+
+Para trabalhar com testes Mobile
+- RAM>16Gb
+- Placa de Video dedicada > 2Gb
+- Disco SSD
+- Para testar iPhone e iPad precisa ser MAC
+
+Software:
+
+- IDE: VS Code - Comum Android Studio
+- Emuladores
+- Dispositivo Físico - o primeiro a conectar é o emulator5552
+- Remoto (Emulador / Dispositivo) --> device farm
+  Saucelabs / Browserstack / Perfecto  
+
+  git config --global user.email "stuani.wagner@gmail.com"
+  git config --global user.name "WagnerStuani"
