@@ -1,6 +1,19 @@
 const wdio = require('webdriverio');
 async function main () {
-  const caps = {"platformName":"Android","appium:platformVersion":"9.0","appium:deviceName":"Galaxy S9 FHD GoogleAPI Emulator","appium:deviceOrientation":"portrait","appium:app":"storage:filename=mda-1.0.17-20.apk","appium:appPackage":"com.saucelabs.mydemoapp.android","appium:appActivity":"com.saucelabs.mydemoapp.android.view.activities.SplashActivity","browserName":"","appium:ensureWebviewsHavePages":true,"appium:nativeWebScreenshot":true,"sauce:options":{"name":"Appium Desktop Session -- Jul 21, 2023 10:32 AM"},"appium:newCommandTimeout":3600,"appium:connectHardwareKeyboard":true}
+  const caps = {
+                "platformName":"Android",
+                "appium:platformVersion":"9.0",
+                "appium:deviceName":"Galaxy S9 FHD GoogleAPI Emulator",
+                "appium:deviceOrientation":"portrait","appium:app":"storage:filename=mda-1.0.17-20.apk",
+                "appium:appPackage":"com.saucelabs.mydemoapp.android",
+                "appium:appActivity":"com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
+                "browserName":"",
+                "appium:ensureWebviewsHavePages":true,
+                "appium:nativeWebScreenshot":true,
+                "sauce:options":{"name":"Appium Desktop Session -- Jul 21, 2023 10:32 AM"},
+                "appium:newCommandTimeout":3600,
+                "appium:connectHardwareKeyboard":true
+              };
   const driver = await wdio.remote({
     protocol: "http",
     hostname: "ondemand.us-west-1.saucelabs.com",
